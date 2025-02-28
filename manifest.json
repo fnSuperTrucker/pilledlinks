@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Pilled Chat Linkify",
+  "version": "1.5",
+  "description": "Makes links in Pilled.net chat clickable",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.pilled.net/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
